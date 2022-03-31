@@ -1,53 +1,99 @@
 html {
   background-color: #fff;
-  font-family: "Meriweather";
+  font-family: Merriweather, serif;
   line-height: 1.5;
+  box-sizing: border-box;
+
 }
 
-img {
-grid-column-start: 1fr 1fr 1fr;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-title {
-  font-family: "Meriweather";
+ img {
+   width:100%;
+ }
+
+ main {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: .75rem;
+   grid-template-areas:
+   "banner banner banner"
+   "image1 image2 image3";
+ }
+
+h1 {
+  font-family: "Merriweather";
   font-style: italic;
-  text-transform: none;
+  text-transform: inherit;
   margin: 1rem;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
-h1, h2, h3, {
-  font-family: "Meriweather";
+h2 {
+  font-family: "Merriweather";
   font-style: italic;
-  text-transform: none;
+  text-transform: inherit;
   margin: 1rem;
-  font-size: 1.8rem
+  font-size: 1.8rem;
+  font-weight: normal;
 }
-
-.intro {
-  color: #;
-  grid-column: 1 / 2;
-  align-self: end;
-  z-index: 1;
+h3 {
+  font-family: "Merriweather";
+  font-style: italic;
+  text-transform: inherit;
+  margin: 1rem;
+  font-size: 1.8rem;
+  font-weight: normal;
 }
 
 div {
   display: grid;
   list-style-type: none;
-  padding: 1;
-  display: grid;
+  padding: 1rem;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.Maerten {
+.intro {
+  color: #fff;
+  grid-column: 1 / 2;
+  align-self: end;
+  z-index: 1;
   grid-column: 1 / -1;
   grid-row: 1;
   width: 100%;
 }
 
-main {
-  grid-template-areas:
-  gap:
-  grid-area:
+.maerten {
+  align-self: end;
+  z-index: 1;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+}
+
+figcaption {
+  padding: .2rem 1.2rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.banner-text {
+  grid-area: banner;
+  align-self: end;
+  padding:1.5rem 1rem;
+}
+
+p {
+  grid-column: 2 / 2;
+  grid-column-gap: .75rem;
+}
+
+main > img {
+  grid-area: sidebar;
 }
