@@ -1,0 +1,42 @@
+html {
+  background-color: #fff;
+  font-family: "Meriweather";
+  line-height: 1.5;
+}
+
+img {
+grid-column-start: 1fr 1fr 1fr;
+}
+
+title {
+  font-family: "Meriweather";
+  font-style: italic;
+  text-transform: none;
+  margin: 1rem;
+  font-size: 1.5rem
+}
+
+h1, h2, h3, {
+  font-family: "Meriweather";
+  font-style: italic;
+  text-transform: none;
+  margin: 1rem;
+  font-size: 1.8rem
+}
+
+.intro {
+  color: #;
+  grid-column: 1 / 2;
+  align-self: end;
+  z-index: 1;
+}
+
+div {
+  display: grid;
+  list-style-type: none;
+  padding: 1;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.
